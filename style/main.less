@@ -1,0 +1,149 @@
+@text-color: #333;
+@dropdown-border: #C9CACA;
+@primary: #0072bb;
+@white: #fff;
+@text-family: 'Lato', sans-serif;
+@light-text: lighten(@text-color, 30%);
+
+body {
+  color: @text-color;
+  font: 400 15px/21px @text-family;
+}
+
+h2 {
+  font: 300 36px/36px @text-family;
+}
+
+h3 {
+  font: 300 30px/30px @text-family;
+}
+
+h2,
+h3 {
+  color: @primary;
+}
+
+.btn {
+  font: 700 15px/21px @text-family;
+}
+
+.navbar-brand {
+  padding: 5px 0;
+  height: auto
+}
+
+.page-navbar {
+  background: none;
+  border: none;
+}
+
+.logo-img {
+  height: 50px;
+}
+
+.nav-items {
+  .active {
+    border-bottom: 2px solid @primary;
+  }
+}
+
+//to override existing bootstrap style
+.navbar-default {
+  .navbar-nav {
+    .active,
+    .open {
+      a {
+        background: none;
+        
+        &:hover,
+        &:focus {
+          background: none;
+        }
+      }
+    }
+  }
+}
+
+//to override existing bootstrap style
+.navbar-right {
+  .dropdown-menu {
+    left: 0;
+    padding: 0;
+    border: 1px solid @dropdown-border;
+  
+    li {
+      border-bottom: 1px solid @dropdown-border;
+    }
+  }
+}
+
+.slide-one,
+.slide-two {
+  background: url('http://lorempixel.com/g/1900/500/');
+}
+
+.banner-content {
+  background-color: @primary;
+  color: @white;
+  opacity: 0.7;
+  padding: 50px 60px;
+}
+
+.banner-header {
+  color: @white;
+}
+
+.btn-slide {
+  background: @white;
+  color: @primary;
+  border-radius: 5px;
+  padding: 5px 10px;
+
+  &:hover {
+    background: darken(@white, 10%);
+    color: darken(@primary, 10%);
+  }
+}
+
+.section-sep {
+  margin-bottom: 30px;
+}
+
+.light-font {
+  color: @light-text;
+}
+
+.lead-text {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.bottom-line {
+  border: 1px solid @light-text;
+  margin-top: 20px;
+}
+
+.card-img-top {
+  width: 100%;
+}
+
+.testimonial {
+  font-style: italic;
+  font-size: 18px;
+}
+
+@media screen and (min-width: 768px) {
+  .banner-content {
+    margin: 80px 0 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .banner-content {
+    margin: 15px 0;
+  }
+
+  .card-holder {
+    margin-bottom: 15px;
+  }
+}

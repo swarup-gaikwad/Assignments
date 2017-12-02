@@ -1,0 +1,106 @@
+body {
+  color: #333;
+  font: 400 15px/21px 'Lato', sans-serif;
+}
+h2 {
+  font: 300 36px/36px 'Lato', sans-serif;
+}
+h3 {
+  font: 300 30px/30px 'Lato', sans-serif;
+}
+h2,
+h3 {
+  color: #0072bb;
+}
+.btn {
+  font: 700 15px/21px 'Lato', sans-serif;
+}
+.navbar-brand {
+  padding: 5px 0;
+  height: auto;
+}
+.page-navbar {
+  background: none;
+  border: none;
+}
+.logo-img {
+  height: 50px;
+}
+.nav-items .active {
+  border-bottom: 2px solid #0072bb;
+}
+.navbar-default .navbar-nav .active a,
+.navbar-default .navbar-nav .open a {
+  background: none;
+}
+.navbar-default .navbar-nav .active a:hover,
+.navbar-default .navbar-nav .open a:hover,
+.navbar-default .navbar-nav .active a:focus,
+.navbar-default .navbar-nav .open a:focus {
+  background: none;
+}
+.navbar-right .dropdown-menu {
+  left: 0;
+  padding: 0;
+  border: 1px solid #C9CACA;
+}
+.navbar-right .dropdown-menu li {
+  border-bottom: 1px solid #C9CACA;
+}
+.slide-one,
+.slide-two {
+  background: url('http://lorempixel.com/g/1900/500/');
+}
+.banner-content {
+  background-color: #0072bb;
+  color: #fff;
+  opacity: 0.7;
+  padding: 50px 60px;
+}
+.banner-header {
+  color: #fff;
+}
+.btn-slide {
+  background: #fff;
+  color: #0072bb;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+.btn-slide:hover {
+  background: #e6e6e6;
+  color: #005388;
+}
+.section-sep {
+  margin-bottom: 30px;
+}
+.light-font {
+  color: #808080;
+}
+.lead-text {
+  font-size: 20px;
+  line-height: 30px;
+}
+.bottom-line {
+  border: 1px solid #808080;
+  margin-top: 20px;
+}
+.card-img-top {
+  width: 100%;
+}
+.testimonial {
+  font-style: italic;
+  font-size: 20px;
+}
+@media screen and (min-width: 768px) {
+  .banner-content {
+    margin: 80px 0 50px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .banner-content {
+    margin: 15px 0;
+  }
+  .card-holder {
+    margin-bottom: 15px;
+  }
+}
